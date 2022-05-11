@@ -7,14 +7,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=0.75, maximum-scale=1, user-scalable=no">
     <style>
-        /* Make the image fully responsive */
-        
         .carousel-inner img {
             width: 130%;
             height: 130%;
         }
     </style>
-    <title>WYNAJEM</title>
+    <link rel="icon" href="./icon.jpg">
+    <title>Krakowska Awangarda</title>
 </head>
 
 <body>
