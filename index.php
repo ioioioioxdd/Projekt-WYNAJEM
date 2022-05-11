@@ -15,7 +15,6 @@
         }
     </style>
     <title>WYNAJEM</title>
-
 </head>
 
 <body>
@@ -26,8 +25,9 @@
         <div class="container">
             <div class="row" id="c1">
                 <div class="b1 col-md-6" id="title">
-                    <p class="h1">ul. Łokietka</p>
+                    <p class="h1">ul. Łokietka 12A</p>
                     <p class="lead" id="ttl">Krakowska Krowodrza</p>
+                    <p class="lead tc1 tcm" id="ttl">Mieszkanie przeznaczone dla 2 osób</p>
                 </div>
                 <div class="b1 col-md-6" id="title">
                     <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -72,7 +72,7 @@
         <div class="container">
             <div class="row">
                 <div class="embed-responsive embed-responsive-16by9 b1 col-md-6" id="title">
-                    <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.900460204206!2d19.908292215933425!3d50.069425779424655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165bbad9f30ceb%3A0x44e34787a91a27b5!2sKrowodrza%2C%2030-001%20Krak%C3%B3w!5e0!3m2!1spl!2spl!4v1652203877382!5m2!1spl!2spl"
+                    <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.4457207434148!2d19.92688011571793!3d50.07794127942569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165bab3e799257%3A0x5fe8c837175edeed!2zV8WCYWR5c8WCYXdhIMWBb2tpZXRrYSAxMkEvNWEsIDMwLTAxMCBLcmFrw7N3!5e0!3m2!1spl!2spl!4v1652282465479!5m2!1spl!2spl"
                         width="470" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="b1 col-md-6">
@@ -84,24 +84,40 @@
         </div>
 
 
-        <div class="form-group" id="inf">
-            <label for="in">Imię i Nazwisko:</label>
+        <form class="form-group" id="contact-form" name="contact-form" action="mail.php" method="POST">
+            <div id="inf">
+            <p class="h1" id="contact-size">Skontaktuj się z nami!</p>
+            <label for="in" class="tc1">Imię i Nazwisko:</label>
             <input type="text" class="form-control" name="in"><br>
 
-            <label for="nr">Nr. telefonu:</label>
+            <label for="email" class="tc1">E-Mail: </label>
+            <input type="text" class="form-control" name="email"><br>
+
+            <label for="nr" class="tc1">Nr. telefonu:</label>
             <input type="text" class="form-control" name="nr"><br>
 
-            <label for="comment">Uwagi:</label>
+            <label for="comment" class="tc1">Uwagi:</label>
             <textarea class="form-control" rows="5" name="comment"></textarea><br>
-            <button type="button" class="btn btn-primary" name="submit_btn">Wyślij</button>
-            <br><br><br><br>
+            <label for="start" class="lead tc1" id="inf">Od: </label>
+        <input type="date" id="start" name="start"
+       value="2022-04-02"
+       min="2022-01-01" max="2023-12-31"></br>
+       <label for="end" class="lead tc1" id="inf">Do: </label>
+        <input type="date" id="end" name="end"
+       value="2022-04-03"
+       min="2022-01-01" max="2023-12-31"></br>    
         </div>
+        </form>
+        <button id="inf" type="submit" value="Wyślij" class="btn btn-dark" onclick="document.getElementById('contact-form').submit();" name="submit_btn">Wyślij</button>
+        
+        <Br><Br><br><br>
+    </div>
 
 
     </div>
-    <footer class="bg-dark text-center text-lg-start" id="footer">
-        <div class="text-center p-2" style="background-color: rgb(43, 42, 42);">
-            <p class="text-muted ft">Kontakt: 000 000 000 | E-Mail: kontakt@gmail.com</p>
+    <footer class="bg-dark text-center" id="footer">
+        <div class="text-center p-1" style="background-color: rgb(43, 42, 42);">
+            <h6 class="text-light">Kontakt | Telefon: 668 470 189 lub 531 181 765 | E-Mail: lokietka12a.5a@gmail.com</h6>
         </div>
     </footer>
 
