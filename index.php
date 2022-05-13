@@ -20,7 +20,10 @@
     <img src="./img/Krakow/bg.jpg" class="img-fluid" id="bgi">
     <div id="bg"></div>
     <div id="main">
-        <h1 class="h1" id="hd">Wynajem mieszkania <span class="badge badge-secondary">Kraków</span></h1>
+        <h1 class="h1" id="hdd"><span>
+            <img class="sicon" src=./icon.jpg>
+        </span>Krakowska Awangarda</h1>
+        <h2 class="h2" id="hd">Wynajem mieszkania <span class="badge badge-secondary">Kraków</span></h2>
         <div class="container">
             <div class="row" id="c1">
                 <div class="b1 col-md-6" id="title">
@@ -97,11 +100,12 @@
 
             <label for="comment" class="tc1">Uwagi:</label>
             <textarea class="form-control" rows="5" name="comment"></textarea><br>
-            <label for="start" class="lead tc1" id="inf">Od: </label>
+            <p class="lead tc1">Od kiedy do kiedy chciałbyś wynająć?</p>
+            <label for="start" class="lead tc1">Od: </label>
         <input type="date" id="start" name="start"
        value="2022-04-02"
        min="2022-01-01" max="2023-12-31"></br>
-       <label for="end" class="lead tc1" id="inf">Do: </label>
+       <label for="end" class="lead tc1">Do: </label>
         <input type="date" id="end" name="end"
        value="2022-04-03"
        min="2022-01-01" max="2023-12-31"></br>    
